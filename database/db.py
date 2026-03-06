@@ -1,6 +1,5 @@
 import sqlite3
 from datetime import datetime
-
 def init_db():
 
     conn = sqlite3.connect("musicbot.db")
@@ -13,7 +12,7 @@ def init_db():
         song TEXT,
         artist TEXT,
         feedback TEXT,
-        timestamp DATETIME
+        timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
     )
     """)
 
@@ -52,4 +51,3 @@ def get_user_emotion_history():
     conn.close()
 
     return rows
-

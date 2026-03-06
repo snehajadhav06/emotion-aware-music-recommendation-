@@ -8,9 +8,11 @@ import pandas as pd
 import plotly.express as px
 
 from chatbot.chat_logic import emotion_chat_with_music
-from database.db import save_feedback
+from database.db import save_feedback, init_db
 from utils.voice_input import record_voice
 from utils.album_art import get_album_art
+# Initialize database (important for Streamlit Cloud)
+init_db()
 
 # Page Config
 st.set_page_config(page_title="VibeCheck | AI Music", page_icon="🎧", layout="wide")
