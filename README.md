@@ -1,44 +1,61 @@
-# 🎧 Emotion-Aware Music Chatbot
+# 🎧 Emotion-Aware Music Recommendation Chatbot
 
-An AI-powered chatbot that detects a user's emotional state from text and recommends music accordingly.
-The system analyzes user input, identifies emotions using a transformer-based NLP model, and suggests songs that help improve or match the user's mood.
+An AI-powered music assistant that detects a user's emotional state and recommends songs that match or improve their mood.
+
+The system uses **Natural Language Processing and Transformer models** to analyze user input, identify emotions, and generate personalized music recommendations. The application also stores user interactions and visualizes mood patterns over time.
+
+---
+
+## 🌐 Live Demo
+
+Try the application here:
+
+**🔗 https://emotion-music-recommendation-chat.streamlit.app**
 
 ---
 
 ## 🚀 Features
 
-* Detects user emotions from text
-* Recommends songs based on emotional state
-* Interactive chatbot interface
-* Mood transition logic to gradually improve user's mood
-* Simple dashboard for analytics
+* 🧠 Emotion detection using transformer-based NLP models
+* 🎵 AI-powered music recommendations based on mood
+* 💬 Interactive wellness chatbot interface
+* 🎤 Voice input support
+* 📊 Mood analytics dashboard with trend visualization
+* 💾 Feedback system for improving recommendations
 
 ---
 
 ## 🧠 Tech Stack
 
-* **Python**
-* **Transformers (HuggingFace)**
-* **PyTorch**
-* **Streamlit**
-* **Pandas / NumPy**
-* **Spotify Features API (optional)**
+**Programming & Frameworks**
+
+* Python
+* Streamlit
+
+**Machine Learning**
+
+* HuggingFace Transformers
+* PyTorch
+
+**Data Processing**
+
+* Pandas
+* NumPy
+
+**Visualization**
+
+* Plotly
+
+**Database**
+
+* SQLite
 
 ---
 
 ## 📂 Project Structure
 
 ```
-emotion-music-ai
-│
-├── data
-│   └── songs_dataset.csv
-│
-├── models
-│   └── emotion_detector.py
-│
-├── recommender
-│   └── song_recommender.py
+emotion-music-chatbot
 │
 ├── chatbot
 │   └── chat_logic.py
@@ -46,11 +63,21 @@ emotion-music-ai
 ├── database
 │   └── db.py
 │
-├── dashboard
-│   └── analytics.py
+├── models
+│   └── emotion_detector.py
+│
+├── recommender
+│   └── song_recommender.py
+│
+├── utils
+│   ├── album_art.py
+│   └── voice_input.py
 │
 ├── ui
 │   └── app.py
+│
+├── data
+│   └── songs_dataset.csv
 │
 └── requirements.txt
 ```
@@ -59,33 +86,33 @@ emotion-music-ai
 
 ## ⚙️ Installation
 
-Clone the repository:
+Clone the repository
 
 ```
-git clone https://github.com/yourusername/emotion-music-chatbot.git
+git clone https://github.com/snehajadhav06/emotion-aware-music-recommendation.git
 ```
 
-Move into the project folder:
+Navigate into the project directory
 
 ```
-cd emotion-music-chatbot
+cd emotion-aware-music-recommendation
 ```
 
-Create virtual environment:
+Create a virtual environment
 
 ```
 python -m venv venv
 ```
 
-Activate environment:
+Activate the environment
 
-Windows:
+Windows
 
 ```
 venv\Scripts\activate
 ```
 
-Install dependencies:
+Install dependencies
 
 ```
 pip install -r requirements.txt
@@ -95,52 +122,67 @@ pip install -r requirements.txt
 
 ## ▶️ Run the Application
 
+Start the Streamlit app
+
 ```
 streamlit run ui/app.py
 ```
 
-The app will open in your browser.
+The application will open in your browser.
 
 ---
 
-## 💡 Example
+## 💡 Example Interaction
 
-User Input:
+**User Input**
 
 ```
 I feel very lonely today
 ```
 
-Detected Emotion:
+**Detected Emotion**
 
 ```
 Sadness
 ```
 
-Recommended Music:
+**Recommended Songs**
 
-```
-Calming / uplifting songs
-```
+* Calm acoustic music
+* Mood-lifting tracks
+* Relaxing playlists
 
 ---
 
-## 📊 Future Improvements
+## 📊 Mood Analytics
 
-* Voice emotion detection
-* Real-time Spotify integration
-* Personalized music recommendations
-* User mood tracking dashboard
+The application stores user interactions and visualizes emotional patterns using a dashboard that includes:
+
+* Mood score trends
+* Emotion distribution
+* User feedback insights
+
+---
+
+## 🔮 Future Improvements
+
+* 🎤 Real-time voice emotion detection
+* 🎧 Spotify API integration for direct playback
+* 🤖 Personalized recommendation model
+* 📈 Advanced mood tracking and insights
 
 ---
 
 ## 👩‍💻 Author
 
-Sneha Jadhav
-Engineering Student | Aspiring ML Engineer
+**Sneha Jadhav**
+Engineering Student | Aspiring Machine Learning Engineer
+
+GitHub: https://github.com/snehajadhav06
 
 ---
 
-## ⭐ If you like this project
+## ⭐ Support
 
-Give the repository a **star** ⭐
+If you found this project interesting, please consider giving it a **star ⭐ on GitHub**.
+It helps others discover the project!
